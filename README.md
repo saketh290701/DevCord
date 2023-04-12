@@ -1,36 +1,25 @@
-# Dappcord
+# DevCord
 
 ## Technology Stack & Tools
 
 - Solidity (Writing Smart Contracts & Tests)
 - Javascript (React & Testing)
-- [Hardhat](https://hardhat.org/) (Development Framework)
-- [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
-- [React.js](https://reactjs.org/) (Frontend Framework)
-- [Socket.io](https://socket.io/) (Client & Server communication)
+- Hardhat (Development Framework)
+- Ethers.js (Blockchain Interaction)
+- React.js (Frontend Framework)
+- Socket.io (Client & Server communication)
 
-## Requirements For Initial Setup
-- Install [NodeJS](https://nodejs.org/en/)
+## Requirements ForSetup
+- Install NodeJS
+- Clone/Download the Repository
+- `$ npm install` to install dependencies
+- `$ npx hardhat node` to run the hardhat node [seperate terminal]
+- In a separate terminal execute:
+  `$ npx hardhat run ./scripts/deploy.js --network localhost` [seperate terminal]
+- `$ node server.js` to start the Socket.io server [seperate terminal]
+-  `$ npm run start` to start front end [seperate terminal]
 
-## Setting Up
-### 1. Clone/Download the Repository
 
-### 2. Install Dependencies:
-`$ npm install`
 
-### 3. Run tests
-`$ npx hardhat test`
 
-### 4. Start Hardhat node
-`$ npx hardhat node`
 
-### 5. Run deployment script
-In a separate terminal execute:
-`$ npx hardhat run ./scripts/deploy.js --network localhost`
-
-### 6. Start Socket.io server
-`$ node server.js`
-
-### 7. Start frontend
-In a separate terminal execute:
-`$ npm run start`
